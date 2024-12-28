@@ -46,9 +46,8 @@ demo/
 │   │   │   ├── manageExam.jsp
 │   │   │   ├── manageQuestions.jsp
 ├── pom.xml                    # Maven 配置文件
-```
 
-## 数据库结构
+数据库结构
 数据表
 exams
 存储考试信息。
@@ -76,9 +75,7 @@ exam_questions
 id: 关联记录 ID。
 exam_id: 考试 ID。
 question_id: 问题 ID。
----
 
----
 部署指南
 前置要求
 JDK 8 或更高版本。
@@ -95,7 +92,6 @@ cd online-exam-system
 sql
 CREATE DATABASE online_exam;
 USE online_exam;
-
 
 -- 创建表
 CREATE TABLE `exams` (
@@ -158,8 +154,7 @@ mvn clean install
 姓名: qing
 邮箱: tiangyn7@outlook.com
 GitHub: https://github.com/tiangyn7
----
 
 许可证
 本项目基于 MIT 许可证开源。
----
+```
