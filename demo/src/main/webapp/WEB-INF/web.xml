@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <!-- 注册过滤器 -->
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>filter.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/profile.jsp</url-pattern>
+    <!-- 添加其他需要保护的 URL -->
+  </filter-mapping>
+
+  <!-- 设置会话超时时间（单位为分钟） -->
+  <session-config>
+    <session-timeout>30</session-timeout> <!-- 设置为30分钟 -->
+  </session-config>
+
+  <!-- 其他配置项 -->
+</web-app>
