@@ -47,6 +47,7 @@ demo/
 │   │   │   ├── manageQuestions.jsp
 ├── pom.xml                    # Maven 配置文件
 
+```
 数据库结构
 数据表
 exams
@@ -77,6 +78,7 @@ Maven 3.6 或更高版本。
 安装步骤
 克隆项目：
 
+```plaintext
 bash
 复制代码
 git clone https://github.com/your-repo/online-exam-system.git
@@ -128,6 +130,7 @@ bash
 mvn clean install
 部署到 Tomcat：
 
+```
 将生成的 WAR 文件复制到 Tomcat/webapps 目录。
 启动 Tomcat。
 访问项目：
