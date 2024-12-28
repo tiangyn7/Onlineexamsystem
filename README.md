@@ -1,3 +1,4 @@
+```
 # 在线考试管理系统
 
 ## 项目概述
@@ -46,10 +47,10 @@ demo/
 │   │   │   ├── manageExam.jsp
 │   │   │   ├── manageQuestions.jsp
 ├── pom.xml                    # Maven 配置文件
+
 数据库结构
 数据表
 exams
-
 存储考试信息。
 主要字段：
 id: 考试 ID。
@@ -75,6 +76,7 @@ exam_questions
 id: 关联记录 ID。
 exam_id: 考试 ID。
 question_id: 问题 ID。
+
 部署指南
 前置要求
 JDK 8 或更高版本。
@@ -83,12 +85,11 @@ MySQL 8.0 或更高版本。
 Maven 3.6 或更高版本。
 安装步骤
 克隆项目
-
 bash
 git clone https://github.com/your-repo/online-exam-system.git
 cd online-exam-system
-创建数据库并导入 SQL 脚本
 
+创建数据库并导入 SQL 脚本
 sql
 CREATE DATABASE online_exam;
 USE online_exam;
@@ -119,44 +120,42 @@ CREATE TABLE `exam_questions` (
     FOREIGN KEY (`exam_id`) REFERENCES `exams`(`id`) ON DELETE CASCADE,
     FOREIGN KEY (`question_id`) REFERENCES `questions`(`id`) ON DELETE CASCADE
 );
+
 配置数据库连接
-
 编辑 src/main/resources/application.properties 文件（如果有）或在代码中调整数据库连接：
-
 properties
 spring.datasource.url=jdbc:mysql://localhost:3306/online_exam
 spring.datasource.username=root
 spring.datasource.password=yourpassword
-构建项目
 
+构建项目
 bash
 mvn clean install
-部署到 Tomcat
 
+部署到 Tomcat
 将生成的 WAR 文件复制到 Tomcat/webapps 目录，并启动 Tomcat。
 
 访问项目
-
 在浏览器中访问 http://localhost:8080/demo。
 
 使用说明
 进入系统
-
 打开浏览器，访问 http://localhost:8080/demo。
 
 管理考试
-
 查看和编辑考试信息。
 添加新考试。
-管理问题
 
+管理问题
 添加或删除考试问题。
 考试详情
-
 查看特定考试下的问题及其答案。
+
 开发者
 姓名: qing
 邮箱: tiangyn7@outlook.com
 GitHub: https://github.com/tiangyn7
+
 许可证
 本项目基于 MIT 许可证开源。
+```
