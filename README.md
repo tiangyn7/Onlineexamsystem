@@ -98,22 +98,17 @@ question_id  问题 ID
 ## 部署指南
 
 ### 前置要求
-
-```plaintext
 - **JDK**：JDK 8 或更高版本。
 - **Tomcat**：Apache Tomcat 9.0 或更高版本。
 - **数据库**：MySQL 8.0 或更高版本。
 - **构建工具**：Maven 3.6 或更高版本。
-```
+
 
 ### 安装步骤
 
 #### 克隆项目：
-
-```bash
 git clone https://github.com/your-repo/online-exam-system.git
 cd online-exam-system
-```
 
 #### 创建数据库并导入 SQL 脚本：
 
@@ -164,43 +159,30 @@ mvn clean install
 ```
 
 #### 部署到 Tomcat：
-
-```plaintext
 将生成的 WAR 文件复制到 Tomcat 的 webapps 目录。
-```
 
 #### 启动 Tomcat：
+启动 Tomcat 后，在浏览器访问：http://localhost:8080/demo
 
-```plaintext
-启动 Tomcat 后，在浏览器访问：
-http://localhost:8080/demo
-```
 
 ---
 
 ## 使用说明
-
-```plaintext
 - **进入系统**：打开浏览器，访问 http://localhost:8080/demo。
 - **管理考试**：查看和编辑考试信息，添加新考试。
 - **管理问题**：添加或删除考试问题。
 - **考试详情**：查看特定考试下的问题及其答案。
-```
+
 
 ---
 
 ## 开发者
-
-```plaintext
 姓名：[qing]
 邮箱：[tiangyn7@outlook.com]
 GitHub：[https://github.com/tiangyn7](https://github.com/tiangyn7)
-```
+
 
 ---
 
 ## 许可证
-
-```plaintext
 本项目基于 MIT 许可证开源。
-```
