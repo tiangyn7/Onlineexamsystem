@@ -177,9 +177,9 @@ mvn clean install
 ---
 
 ## 开发者
-- **姓名：[qing]
-- **邮箱：[tiangyn7@outlook.com]
-- **GitHub：[https://github.com/tiangyn7](https://github.com/tiangyn7)
+- 姓名：[qing]
+- 邮箱：[tiangyn7@outlook.com]
+- GitHub：[https://github.com/tiangyn7](https://github.com/tiangyn7)
 
 
 ---
